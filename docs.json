@@ -56,10 +56,15 @@
       },
       {
         "tab": "Others",
-        "openapi": {
-          "source": "/openapi.json",
-          "directory": "api-reference"
-        }
+        "groups": [
+          {
+            "group": "Endpoints",
+            "openapi": {
+              "source": "/openapi.json",
+              "directory": "api-reference"
+            }
+          }
+        ]
       }
     ],
     "global": {
