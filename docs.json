@@ -60,7 +60,6 @@
           "source": "/openapi.json",
           "directory": "api-reference"
         }
-        "openapi": "https://raw.githubusercontent.com/zzzze/docs/refs/heads/main/api-reference/openapi.json"
       }
     ],
     "global": {
