@@ -56,7 +56,7 @@
       },
       {
         "tab": "Others",
-        "openapi": "api-reference/openapi.json"
+        "openapi": "https://raw.githubusercontent.com/zzzze/docs/refs/heads/main/api-reference/openapi.json"
       }
     ],
     "global": {
