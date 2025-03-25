@@ -53,6 +53,10 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Others",
+        "openapi": "api-reference/openapi.json"
       }
     ],
     "global": {
