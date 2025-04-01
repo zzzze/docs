@@ -19,6 +19,87 @@
     }
   ],
   "paths": {
+    "/api/v1/projects/{projectId}/securitySchemes": {
+      "post": {
+        "summary": "新建鉴权组件",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "鉴权组件/鉴权组件"
+        ],
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "locale",
+            "in": "query",
+            "description": "中 zh-CN；英en-US；日ja-JP",
+            "example": "zh-CN",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Project-Id",
+            "in": "header",
+            "description": "项目id",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Client-Version",
+            "in": "header",
+            "description": "客户端版本",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Device-Id",
+            "in": "header",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Branch-Id",
+            "in": "header",
+            "description": "- 说明：当前项目弹窗选择的分支id\n- 默认值：服务端会用主分支 ID\n- 时机：项目弹窗内的请求，有值情况下，理论上项目资源类型的接口都需要传",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    
+
+    
     "/plants": {
       "get": {
         "description": "Returns all plants from the system that the user has access to",
