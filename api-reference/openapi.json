@@ -27,11 +27,11 @@
   "paths": {
     "/": {
                "get": {
-        "summary": "set cookie",
+        "summary": "get /",
         "deprecated": false,
         "description": "",
         "tags": [] 
-    },
+    }
 
           }
     "/api/v1/projects/{projectId}/securitySchemes": {
