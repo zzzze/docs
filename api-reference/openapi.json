@@ -25,8 +25,14 @@
     }
   ],
   "paths": {
-          "get": {
-        "description": "Returns all plants from the system that the user has access to"
+    "/": {
+               "get": {
+        "summary": "set cookie",
+        "deprecated": false,
+        "description": "",
+        "tags": [] 
+    },
+
           }
     "/api/v1/projects/{projectId}/securitySchemes": {
       "post": {
