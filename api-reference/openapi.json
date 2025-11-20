@@ -26,14 +26,70 @@
   ],
   "paths": {
     "/": {
-               "get": {
-        "summary": "get /",
+      "get": {
+        "summary": "baidu",
         "deprecated": false,
         "description": "",
-        "tags": [] 
-    }
-
+        "tags": [],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "query",
+            "description": "",
+            "example": "1",
+            "schema": {
+              "type": "string",
+              "default": "1"
+            }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {}
+          },
+          "401": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "errorCode": {
+                      "type": "string"
+                    },
+                    "errorMessage": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "errorCode",
+                    "errorMessage"
+                  ]
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": [
+
+        ]
+      }
+
+          },
     "/api/v1/projects/{projectId}/securitySchemes": {
       "post": {
         "summary": "新建鉴权组件",
