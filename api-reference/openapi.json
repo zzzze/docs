@@ -11,6 +11,9 @@
   "servers": [
     {
       "url": "http://sandbox.mintlify.com"
+    },
+        {
+      "url": "https://httpbin.org"
     }
   ],
   "security": [
